@@ -4,9 +4,10 @@ import { PokemonListComponent } from './component/pokemon-list/pokemon-list.comp
 import { BerriesListComponent } from './component/berries-list/berries-list.component';
 
 const routes: Routes = [
-  {path: 'pokemonList', component: PokemonListComponent},
-  {path: 'berryList', component: BerriesListComponent}
-  
+  { path: 'pokemonList', component: PokemonListComponent },
+  { path: 'berryList', component: BerriesListComponent },
+  { path: '', pathMatch: 'full', redirectTo: '/pokemonList' }
+
 ];
 
 @NgModule({
